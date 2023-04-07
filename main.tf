@@ -60,6 +60,9 @@ resource "azurerm_storage_container" "containerteste" {
 
 }
 
+
+#### Outputs
+
 output "blobstorage-nome" {
   value = azurerm_storage_account.storageteste.name
 
