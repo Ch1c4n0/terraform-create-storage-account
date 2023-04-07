@@ -76,3 +76,9 @@ output "blobstorage-chave-secundaria" {
   sensitive = true
 
 }
+
+
+output "blobstorage-localizacao" {
+  value = azurerm_storage_account.storageteste.location
+ 
+}
