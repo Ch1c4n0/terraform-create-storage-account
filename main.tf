@@ -60,6 +60,9 @@ resource "azurerm_storage_container" "containerteste" {
 
 }
 
+
+#### Outputs
+
 output "blobstorage-nome" {
   value = azurerm_storage_account.storageteste.name
 
@@ -75,4 +78,10 @@ output "blobstorage-chave-secundaria" {
   value = azurerm_storage_account.storageteste.secondary_access_key
   sensitive = true
 
+}
+
+
+output "blobstorage-localizacao" {
+  value = azurerm_storage_account.storageteste.location
+ 
 }
